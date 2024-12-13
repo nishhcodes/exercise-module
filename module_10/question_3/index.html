@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="content">
+                <h4>Welcome to HobbyBloom! 🌱</h4>
+                <p>Discover, nurture, and grow your passions like never before. Whether you're exploring new hobbies or mastering old ones, we’re here to inspire and guide you every step of the way. Let’s turn your interests into fulfilling experiences!</p>
+                <form class="form_field">
+                    <label class="label_title" for="name">Full name</label><br>
+                    <input class="input_field" type="text" autofocus><br>
+                    <label class="label_title" for="email">Email</label><br>
+                    <input class="input_field" type="email"><br>
+                    <div class="inner_content_container">
+                        <div class="dob_container">
+                            <label class="label_title" for="date">Date of Birth</label><br>
+                        <input class="input_field" type="date"><br>
+                        </div>
+                        <div class="interest_container">
+                            <label class="label_title" for="interest">Area of Interest</label><br>
+                            <select class="input_field select-items">
+                                <option class="interest_items" value="music">Music</option>
+                                <option class="interest_items" value="dance">Dance</option>
+                                <option class="interest_items" value="art">Art</option>
+                                <option class="interest_items" value="sport">Sport</option>
+                                <option class="interest_items" value="science">Science</option>
+                            </select><br>
+                        </div>
+                    </div>
+                    <label for="password" class="label_title">Password</label><br>
+                    <input type="password" class="input_field"><br>
+                    <label for="retype_password" class="label_title">Re-type Password</label><br>
+                    <input type="password" class="input_field"><br>
+                </form>
+                <div class="login_container">
+                    <button type="submit">Sign up</button>
+                    <p>Already have an account? <a href="#">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

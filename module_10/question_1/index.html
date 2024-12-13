@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <!-- I'm using this link tag to connect our div that has external class with style.css file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- I'm using this style tag to style div that has internal class -->
+     <style>
+        .internal {
+            height: 100px;
+            background-color: #F4E0AF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .target {
+            background-color: pink;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+     </style>
+</head>
+<body>
+    
+    <section>
+        
+        <div class="external">
+            <p>External Div</p>
+        </div>
+
+        <div class="internal">
+            <p>Internal Div</p>
+        </div>
+
+        <!-- Here I'm using inline CSS-->
+        <div 
+            style="
+            height: 100px;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            background-color: #A8CD89;">
+            <p>Inline Div</p>
+        </div>
+
+    </section>
+
+    <section>
+
+        <!-- Here we can see that the inline CSS is being applied because the inline CSS has the highest specificity compared to external and internal CSS.-->
+        <div class="target" style="
+            margin-top: 20px;
+            height: 50px;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            background-color: #FF6500;">
+            <p>Example of what happens when you target the same element with inline,
+                external and internal CSS.
+            </p>
+        </div>
+
+    </section>
+
+</body>
+</html>

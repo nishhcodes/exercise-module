@@ -1,0 +1,15 @@
+.external {
+    height: 100px;
+    background-color: #F9C0AB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.target {
+    background-color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}

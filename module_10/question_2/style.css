@@ -1,0 +1,36 @@
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_para {
+    height: 50px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content_para--first {
+    background-color: #F6D6D6;
+}
+
+.content_para--second {
+    background-color: #F6F7C4;
+}
+
+.content_para--third {
+    background-color: #A1EEBD;
+}
+
+.content_para--fourth {
+    background-color: #7BD3EA;
+}
+
+.content_para--fifth {
+    background-color: #CB9DF0;
+}
