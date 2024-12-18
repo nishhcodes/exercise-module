@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    background-color: rgb(64, 118, 234);
+}
+
+.nav-container ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 30px;
+}
+
+.nav-container a {
+    color: white;
+}

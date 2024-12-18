@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-container {
+    background-color: gold;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px 10px;
+    border-radius: 1.5em;
+}
+
+.card-container img {
+    border-radius: 1.5em;
+}
+
+.card-container span {
+    font-weight: 800;
+}

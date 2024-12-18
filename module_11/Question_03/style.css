@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    background-color: rgb(64, 118, 234);
+}
+
+.nav-container ul {
+    display: inline-flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-container a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.home_link {
+    border: 2px solid white;
+}
+
+.about_link {
+    border: 2px dotted white;
+}
+
+.contact_link {
+    border: 2px dashed white;
+}
+
+.blog_link {
+    border: 2px inset white;
+}
+
+.login_link {
+    border: 2px groove white;
+}
