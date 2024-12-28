@@ -1,0 +1,64 @@
+Q. Explain the role of the following key properties in the flexbox layout model.
+
+1. justify-content
+2. align-items
+3. gap
+4. flex-direction
+5. flex-wrapo
+
+-> 
+
+1. justify-content:
+
+    Role: Aligns flex items along the main axis (horizontal by default, unless flex-direction is changed).
+    
+    Common Values:
+
+    -flex-start (default): Items align at the start of the main axis.
+    -flex-end: Items align at the end of the main axis.
+    -center: Items are centered along the main axis.
+    -space-between: Equal spacing between items; no space at the container's edges.
+    -space-around: Equal spacing around items; half-space at edges.
+    -space-evenly: Equal spacing between items and at the edges.
+
+2. align-items:
+
+    Role: Aligns flex items along the cross axis (vertical by default, unless flex-direction is changed).
+    
+    Common Values:
+
+    -stretch (default): Items stretch to fill the container along the cross axis.
+    -flex-start: Items align at the start of the cross axis.
+    -flex-end: Items align at the end of the cross axis.
+    -center: Items are centered along the cross axis.
+    -baseline: Items align along their text baseline.
+
+3. gap:
+
+    Role: Sets spacing between flex items along both the main and cross axes.
+
+    Key Feature: Simplifies spacing without adding margins.
+    
+    Common Values:
+
+    CSS length units, e.g., 10px, 1rem, 5%.
+
+4. flex-direction:
+
+    Role: Defines the direction of flex items within the container.
+
+    Common Values:
+
+    -row (default): Items are laid out horizontally from left to right.
+    -row-reverse: Items are laid out horizontally from right to left.
+    -column: Items are laid out vertically from top to bottom.
+
+5. flex-wrap:
+
+    Role: Determines whether flex items wrap onto multiple lines when they run out of space in the container.
+
+    Common Values:
+
+    -nowrap (default): All items remain on one line, even if they overflow.
+    -wrap: Items wrap onto multiple lines when necessary.
+    -wrap-reverse: Items wrap onto multiple lines in reverse order.

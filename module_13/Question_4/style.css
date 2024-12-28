@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --background: #F4F2FD;
+    --content-color: #202842;
+    --Nunito-font: Nunito, sans-serif;
+    --content-background: #FFFFFF;
+}
+
+body {
+    background-color: var(--background);
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container {
+    display: flex;
+    gap: 32px;
+}
+
+.pricing-cards {
+    height: 363px;
+    width: 262px;
+    padding: 32px;
+    border-radius: 8px;
+    position: relative;
+    top: 10px;
+    right: 8px;
+    left: 8px;
+    background-color: var(--content-background);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.card-one-header, .card-three-header {
+    color: var(--content-color);
+    font-family: var(--Nunito-font);
+    position: relative;
+}
+
+.card-one .personal-header, .card-three  {
+    font-size: 16px;
+}
+
+.card-one > p, .card-three > p {
+    font-size: 36px;
+    font-family: sans-serif;
+    color: var(--content-color);
+    margin: 10px 0px;
+}
+
+.plan-details {
+    font-size: 16px;
+}
+
+.plan-details ul {
+    list-style-type: none;
+    font-family: var(--Nunito-font);
+    font-weight: 500;
+    color: var(--content-color);
+}
+
+
+.verify-mark, .verify-mark-2 {
+    height: 22px;
+    width: 22px;
+    position: relative;
+    top: 3px;
+    right: 4px;
+    left: 4px; 
+    bottom: 3px;
+    margin-right: 10px;
+}
+
+.btn {
+    position: relative;
+    font-size: 16px;
+    line-height: 22px;
+    border-radius: 50px;
+    top: 8px;
+    right: 24px;
+    bottom: 8px;
+    left: 24px;
+    margin-top: 26px;
+    background-color: var(--content-color);
+    padding: 6px 22px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+
+
+/* trying the basic styling for second pricing card */
+
+.card-two {
+    background-color: var(--content-color);
+}
+
+.card-two-header {
+    color: var(--content-background);
+    font-family: var(--Nunito-font);
+    position: relative;
+}
+
+.card-two > p{
+    font-size: 36px;
+    font-family: sans-serif;
+    color: var(--content-background);
+    margin: 10px 0px;
+}
+
+.plan-details-2 {
+    font-size: 16px;
+}
+
+.plan-details-2 ul {
+    color: var(--content-background);
+    list-style-type: none;
+    font-family: var(--Nunito-font);
+}
+
+.btn-2 {
+    position: relative;
+    font-size: 16px;
+    line-height: 22px;
+    border-radius: 50px;
+    top: 8px;
+    right: 24px;
+    bottom: 8px;
+    left: 24px;
+    margin-top: 26px;
+    background-color: var(--content-background);
+    padding: 6px 22px;
+    border: none;
+    color: var(--content-color);
+    font-weight: 500;
+}
