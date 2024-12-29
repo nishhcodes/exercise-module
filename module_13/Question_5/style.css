@@ -9,8 +9,7 @@
 
 .main-container {
     display: flex;
-    /* gap: 50px; */
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .main-container img {
@@ -19,13 +18,13 @@
     background-position: center;
 }
 
-.logo-nav-container {
+.first-container {
     margin-top: 50px;
-    margin-left: 100px;
+}
+
+.logo-nav-container {
     display: flex;
     gap: 120px;
-
-    justify-content: center;
 }
 
 .logo > img {
@@ -73,5 +72,59 @@
     background-color: #FFFFFF;
     border: 2px solid #33333333;
     border-radius: 5px;
-    font-size: 16px ;
+    font-size: 16px;
 }
+
+.title-container{
+    margin: 100px 0;
+}
+
+.title-container h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.title-container span {
+    font-size: 32px;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.ticket-btn {
+    background-color: #213D77;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+}
+
+.booking-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.booking-btns img {
+    margin-right: 10px;
+    height: 16px;
+    width: 20px;
+}
+
+.booking-btns a{
+    text-decoration: none;
+    line-height: 200%;
+    font-weight: 700;
+}
+
+.pnr-btn, .charts-btn{
+    background-color: #FFFFFF;
+    font-size: 18px;
+    color: #333333;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    border: 2px solid #33333380;
+}
+
+
+
