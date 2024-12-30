@@ -7,6 +7,17 @@
     box-sizing: border-box;
 }
 
+:root {
+    --green: #01BB0A;
+    --gray: #333333;
+    --white: #FFFFFF;
+    --orange: #FB792B;
+    --shadow: #33333333;
+    --navy-blue: #213D77;
+    --gray-border: #33333380;
+    --second-gray-border: #3333331A;
+}
+
 .main-container {
     display: flex;
     justify-content: space-evenly;
@@ -194,5 +205,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 16px 0px;
+    padding: 16 px 0px;
 }
