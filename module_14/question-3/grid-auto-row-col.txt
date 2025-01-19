@@ -47,3 +47,40 @@ The third item will be placed in a new row automatically created with a height o
 
 Grid-auto-columns: This property sets the width of automatically created columns.
 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-auto-columns Example</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-rows: 100px 100px; /* Explicitly define 2 rows */
+        grid-auto-columns: 80px; /* Automatically created columns will have a width of 80px */
+        gap: 10px;
+      }
+
+      .item {
+        background-color: lightcoral;
+        text-align: center;
+        line-height: 100px;
+      }
+
+      .item:nth-child(3) {
+        grid-column: 3; /* Explicitly places this item in the third column, which doesn't exist yet */
+      }
+    </style>
+    </head>
+    <body>
+      <div class="grid-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div> <!-- Creates a new column with a width of 80px -->
+      </div>
+    </body>
+    </html>
+
+Output:
+Grid will have two explicit rows (100px each).
+The third item will be placed in a new column automatically created with a width of 80px.
