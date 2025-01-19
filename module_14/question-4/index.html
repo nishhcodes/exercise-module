@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Challenge</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: grid;
+            grid-template: repeat(2,1fr) / repeat(6, 1fr);
+            gap: 20px;
+            padding: 20px;
+            height: 40vh;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            font-size: 1.4rem;
+        }
+        .dark-gray {
+            background-color: rgb(77, 77, 77);
+            color: white;
+        }
+        .light-gray {
+            background-color: rgb(201, 201, 201);
+        }
+        .box-1 {
+            grid-row: 2/3;
+        }
+        .box-2 {
+            grid-row: 2/3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1 dark-gray">1</div>
+        <div class="box box-2 light-gray">2</div>
+        <div class="box box-3 dark-gray">3</div>
+        <div class="box box-4 light-gray">4</div>
+        <div class="box box-5 dark-gray">5</div>
+        <div class="box box-6 light-gray">6</div>
+        <div class="box box-7 dark-gray">7</div>
+        <div class="box box-8 light-gray">8</div>
+    </div>
+</body>
+</html>
