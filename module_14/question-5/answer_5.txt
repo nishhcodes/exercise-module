@@ -1,0 +1,83 @@
+The justify-items and justify-self properties are both used in CSS for aligning items in a grid container along the inline (horizontal) axis. 
+
+However, they differ in scope:
+
+justify-items: Aligns all items in a grid container along the inline axis.
+justify-self: Aligns a specific item in a grid container along the inline axis.
+
+JUSTIFY-ITEMS: CODE EXAMPLE
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>justify-items Example</title>
+      <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(3, 100px);
+          grid-template-rows: 100px;
+          justify-items: center; /* Aligns all grid items to the center horizontally */
+          gap: 10px;
+          border: 2px solid black;
+        }
+        .grid-item {
+          background-color: lightblue;
+          padding: 10px;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+      </div>
+    </body>
+    </html>
+
+Explanation:
+The justify-items: center; aligns all grid items (1, 2, 3) to the center of their grid cells horizontally.
+
+JUSTIFY-SELF: CODE EXAMPLE 
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>justify-self Example</title>
+      <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(3, 100px);
+          grid-template-rows: 100px;
+          gap: 10px;
+          border: 2px solid black;
+        }
+        .grid-item {
+          background-color: lightblue;
+          padding: 10px;
+        }
+        .grid-item:nth-child(2) {
+          justify-self: end; /* Aligns this specific item to the end of its cell */
+        }
+        .grid-item:nth-child(3) {
+          justify-self: start; /* Aligns this specific item to the start of its cell */
+        }
+      </style>
+    </head>
+    <body>
+      <div class="grid-container">
+        <div class="grid-item">Item 1</div>
+        <div class="grid-item">Item 2</div>
+        <div class="grid-item">Item 3</div>
+      </div>
+    </body>
+    </html>
+
+Explanation:
+
+The second grid item (Item 2) is aligned to the end of its grid cell using justify-self: end;.
+The third grid item (Item 3) is aligned to the start of its grid cell using justify-self: start;.
