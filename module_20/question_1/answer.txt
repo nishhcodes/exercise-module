@@ -1,0 +1,129 @@
+Conditional statements are used in programming to execute certain actions based on whether a condition is true or false. 
+They help control the flow of a program by allowing different blocks of code to run depending on the outcome of a given condition.
+
+Types of Conditional Statements:
+
+Most programming languages have the following types of conditional statements:
+
+1. if Statement
+2. if-else Statement
+3. else if Statement
+4. Nested if Statement
+5. Switch Statement 
+
+1. if statement - The if statement checks a condition. If the condition is true, the block of code inside the if statement is executed.
+
+Syntax: 
+
+if (condition) {
+    // Code to execute if condition is true
+}
+
+Example: 
+
+let age = 20;
+if (age >= 18) {
+    console.log("You are an adult.");
+}
+
+
+2. if-else statement - Executes one block if the condition is true, and another block if the condition is false.
+
+Syntax: 
+
+if (condition) {
+    // Code if condition is true
+} else {
+    // Code if condition is false
+}
+
+Example: 
+
+let age = 16;
+if (age >= 18) {
+    console.log("Eligible");
+} else {
+    console.log("Not Eligible");
+}
+
+3. else if statement - Checks multiple conditions sequentially.
+
+Syntax: 
+
+if (condition1) {
+    // Code if condition1 is true
+} else if (condition2) {
+    // Code if condition2 is true
+} else {
+    // Code if none of the above conditions are true
+}
+
+Example: 
+
+let marks = 75;
+
+if (marks >= 90) {
+    console.log("Grade: A");
+} else if (marks >= 75) {
+    console.log("Grade: B");
+} else if (marks >= 50) {
+    console.log("Grade: C");
+} else {
+    console.log("Grade: F");
+}
+
+
+4. Nested if statement - An if statement inside another if statement.
+
+Syntax: 
+
+if (condition1) {
+    if (condition2) {
+        // Code if both conditions are true
+    }
+}
+
+Example:
+
+let num = 10;
+
+if (num > 0) {
+    console.log("Positive number");
+
+    if (num % 2 === 0) {
+        console.log("Even number");
+    }
+}
+
+5. switch statement - Used as an alternative to multiple if-else conditions.
+
+Syntax: 
+
+switch (expression) {
+    case value1:
+        // Code if expression === value1
+        break;
+    case value2:
+        // Code if expression === value2
+        break;
+    default:
+        // Code if no match is found
+}
+
+Example: 
+
+let day = 3;
+
+switch (day) {
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    default:
+        console.log("Invalid day");
+}
