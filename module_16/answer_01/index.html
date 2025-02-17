@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var()</title>
+    <style>
+        :root {
+            --primary-btn: #00b7ff;
+            --secondary-btn: #6c757d;
+            --font-color: #fff;
+        }
+        #primaryBtn {
+            background-color: var(--primary-btn);
+            color: var(--font-color);
+            border: none;
+            padding: 4px 12px;
+        }
+        #secondaryBtn {
+            background-color: var(--secondary-btn);
+            color: var(--font-color);
+            border: none;
+            padding: 4px 12px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <button id="primaryBtn">Primary Button</button>
+        <button id="secondaryBtn">Secondary Button</button>
+    </main>
+</body>
+</html>
