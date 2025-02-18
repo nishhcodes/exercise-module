@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: black;
+}
+
+ul {
+    color: white;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+
+@media (max-width:768px) {
+    header {
+        background-color: gray;
+    }
+    ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
