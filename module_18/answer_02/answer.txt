@@ -1,0 +1,37 @@
+GIT WORKFLOW EXPLAINED
+
+Git follows a structured workflow that helps manage code changes efficiently. It consists of three main areas:
+
+1. Working Directory:
+
+- This is where you modify files in your local project.
+- Any changes you make here are untracked by Git until you explicitly add them.
+
+2. Staging Area (Index):
+
+- This acts as a buffer where changes are prepared before committing.
+- You use git add <file> to move changes from the working directory to the staging area.
+- This allows you to selectively commit only specific changes.
+
+3. Repository (.git folder):
+
+- This is the database where all committed changes are stored.
+- A commit saves a snapshot of the staged changes to the repository.
+- Use git commit -m "message" to move changes from the staging area to the repository.
+
+
+GIT WORKFLOW STEPS 
+
+1. Modify files in the Working Directory: You create or edit files as needed.
+
+2. Stage the changes (git add <file>): Moves selected files to the staging area.
+
+3. Commit the changes (git commit -m "message"): Saves the changes to the local repository with a message describing the update.
+
+4. Push to a Remote Repository (git push origin <branch>): Uploads committed changes to a remote repository like GitHub or GitLab.
+
+5. Pull Updates from Remote (git pull origin <branch>): Fetches and merges changes from the remote repository to keep your local copy updated.
+
+VISUAL RESPRESENTATION
+
+[Working Directory] → git add → [Staging Area] → git commit → [Local Repository] → git push → [Remote Repository]
