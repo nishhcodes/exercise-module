@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+}
+
+.box1, .box4 {
+    flex-shrink: 1;
+    background-color: rgb(34, 34, 34);
+}
+
+.content-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.box2 {
+    background-color: seagreen;
+    flex-grow: 1;
+}
+
+.box3 {
+    background-color: orange;
+    flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .box4 {
+        margin-top: auto;
+    }
+}
