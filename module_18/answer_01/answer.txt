@@ -1,0 +1,29 @@
+Version control is a system that tracks changes to files over time, allowing developers to collaborate, 
+review history, and revert to previous versions if needed. It is essential for managing source code in 
+software development.
+
+There are two main types of version control:
+
+1. Local Version Control – Changes are tracked on a single system, often through simple file backups.
+
+2. Centralized Version Control (CVCS) – A central server stores all versions, and developers check out 
+files to work on. Example: Subversion (SVN).
+
+3. Distributed Version Control (DVCS) – Every developer has a complete copy of the repository. 
+This allows offline work and better collaboration. Example: Git, Mercurial.
+
+Importance of Version Control in Software Development
+
+1. Collaboration – Multiple developers can work on the same project without overwriting each other’s work.
+
+2. History Tracking – Every change is recorded, allowing developers to review past modifications and 
+understand why they were made.
+
+3. Backup & Recovery – If an error or accidental deletion occurs, previous versions can be restored.
+
+4. Branching & Merging – Developers can work on new features in separate branches without affecting 
+the main project, then merge them when ready.
+
+5. Code Integrity & Quality – Helps in code review and ensures only tested, approved changes are merged into production.
+Continuous Integration & Deployment (CI/CD) – Enables automation in software development by integrating and deploying 
+changes efficiently.
