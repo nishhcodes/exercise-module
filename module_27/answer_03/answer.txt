@@ -1,0 +1,49 @@
+What is Event Bubbling in the DOM?
+Event bubbling is a concept in the DOM where an event triggered on a child element propagates (bubbles up) to its 
+parent and ancestors until it reaches the root <html> element.
+
+How Event Bubbling Works:
+When an event occurs on an element, it first executes on the target element and then moves upward through its ancestors.
+
+Example: Event Bubbling in Action:- 
+
+    <div id="parent">
+      <button id="child">Click Me</button>
+    </div>
+    <script>
+      document.getElementById("parent").addEventListener("click", () => {
+        alert("Parent Clicked!");
+      });
+
+      document.getElementById("child").addEventListener("click", () => {
+        alert("Child Clicked!");
+      });
+    </script>
+
+Expected Output When Clicking the Button (#child)
+1️. "Child Clicked!" (event fires on the button)
+2️. "Parent Clicked!" (event bubbles up to the parent div)
+
+Event Bubbling Flow
+If you click on the <button> inside the <div>, the event flows like this:
+
+    <button> (target element)  →  <div> (parent)  →  <body>  →  <html>  →  Document
+
+How to Stop Event Bubbling?
+Sometimes, we don’t want the event to bubble up to parent elements. We can stop it using event.stopPropagation().
+
+Example: Prevent Bubbling
+
+    document.getElementById("child").addEventListener("click", (event) => {
+      alert("Child Clicked!");
+      event.stopPropagation(); // Stops event from reaching the parent
+    });
+
+Now, clicking the button only triggers "Child Clicked!", preventing the parent from receiving the event.
+
+When is Event Bubbling Useful?
+    - Event Delegation – Instead of adding multiple event listeners to child elements, you can add one to the parent and use 
+      bubbling to detect clicks (e.g., managing a dynamic list).
+
+    - Global Click Listeners – You can use bubbling to detect clicks anywhere on the page, useful for closing dropdowns or 
+      modals when clicking outside.
