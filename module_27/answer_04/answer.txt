@@ -1,0 +1,70 @@
+What is addEventListener in JavaScript?
+The addEventListener method is used to attach an event listener to an element in the DOM. It allows JavaScript to 
+respond to user interactions like clicks, keypresses, mouse movements, etc.
+
+Syntax of addEventListener:
+
+    element.addEventListener(eventType, callbackFunction, useCapture);
+
+Parameters:
+
+1. eventType – The type of event (e.g., "click", "mouseover", "keydown", etc.).
+
+2. callbackFunction – A function that executes when the event occurs.
+
+3. useCapture (optional) – A boolean that determines event propagation mode:
+    - false (default) → Event Bubbling (bottom-up)
+    - true → Event Capturing (top-down)
+
+How addEventListener Facilitates Event Handling
+
+1. Allows Multiple Event Listeners on the Same Element:
+
+-Unlike onclick, which overwrites previous event handlers, addEventListener allows multiple listeners.
+
+    let btn = document.getElementById("myButton");
+    btn.addEventListener("click", () => alert("First event!"));
+    btn.addEventListener("click", () => alert("Second event!"));
+
+2. Supports Event Delegation:
+
+- You can add an event listener to a parent and handle events for child elements.
+
+    document.querySelector("#list").addEventListener("click", (event) => {
+      if (event.target.tagName === "LI") {
+        alert("List item clicked: " + event.target.textContent);
+      }
+    });
+
+3. Provides More Control with removeEventListener: 
+
+- You can remove an event listener when it’s no longer needed.
+
+    function greet() {
+      alert("Hello!");
+    }
+
+    btn.addEventListener("click", greet);
+    btn.removeEventListener("click", greet);
+
+4. Works with Different Event Types:
+
+- addEventListener can handle various events, including "keydown", "mouseenter", "scroll", etc.
+
+    window.addEventListener("scroll", () => console.log("User is scrolling!"));
+
+5. Supports Capturing and Bubbling Phases: 
+
+- By default, events bubble up.
+- Setting { capture: true } listens in the capturing phase instead.
+
+    document.addEventListener("click", () => console.log("Capturing!"), true);
+
+Example: Handling a Button Click
+
+    <button id="myButton">Click Me</button>
+    <script>
+      document.getElementById("myButton").addEventListener("click", () => {
+        alert("Button Clicked!");
+      });
+    </script>
