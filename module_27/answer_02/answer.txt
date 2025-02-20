@@ -1,0 +1,64 @@
+What is Event Delegation?
+Event delegation is a technique in JavaScript where a single event listener is added to a parent element instead of 
+adding multiple listeners to individual child elements. This works because of event bubbling, where events triggered 
+on child elements propagate up to their parent elements.
+
+How Event Delegation Works:
+Instead of attaching an event listener to multiple child elements, you attach it to a common ancestor and use event.target 
+to determine which child element triggered the event.
+
+Example Without Event Delegation:
+
+    document.querySelectorAll(".item").forEach((item) => {
+      item.addEventListener("click", () => {
+        alert("Item clicked!");
+      });
+    });
+
+Issue: If new .item elements are added dynamically, they won’t have event listeners attached.
+
+Using Event Delegation 
+
+    document.querySelector(".parent").addEventListener("click", (event) => {
+      if (event.target.classList.contains("item")) {
+        alert("Item clicked!");
+      }
+    });
+
+Benefit: Works even if new .item elements are added dynamically!
+
+When is Event Delegation Useful?
+
+Scenario: Dynamic List of Items
+Imagine a to-do list app where users can add and remove tasks dynamically.
+Instead of adding an event listener to each task individually, you attach one to the list container.
+
+    //html
+
+    <ul id="todo-list">
+      <li class="task">Buy groceries</li>
+      <li class="task">Read a book</li>
+    </ul>
+    <button id="add-task">Add Task</button>
+
+    //JavaScript
+
+    document.querySelector("#todo-list").addEventListener("click", (event) => {
+      if (event.target.classList.contains("task")) {
+        alert(`Task clicked: ${event.target.textContent}`);
+      }
+    });
+
+    document.querySelector("#add-task").addEventListener("click", () => {
+      let newTask = document.createElement("li");
+      newTask.textContent = "New Task";
+      newTask.classList.add("task");
+      document.querySelector("#todo-list").appendChild(newTask);
+    });
+
+
+Why is this beneficial?
+
+    - Handles existing and newly added tasks without needing extra event listeners.
+    - Improves performance by reducing the number of event listeners.
+    - Easier maintenance since all interactions are handled in one place.
